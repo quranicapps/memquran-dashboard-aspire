@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/ExternalProjects/">
+    <Project Path="../memquran-api/src/MemQuran.Api/MemQuran.Api.csproj" />
+    <Project Path="../memquran-dashboard-api/src/MemQuranDashboard.Api/MemQuranDashboard.Api.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="src/MemQuranDashboard.AppHost/MemQuranDashboard.AppHost.csproj" />
+  <Project Path="src/MemQuranDashboard.ServiceDefaults/MemQuranDashboard.ServiceDefaults.csproj" />
+</Solution>
