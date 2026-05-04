@@ -6,7 +6,6 @@ var localstack = builder.AddContainer("localstack", "localstack/localstack:4.4.0
     .WithHttpEndpoint(port: 4566, targetPort: 4566, isProxied: false)
     .WithExternalHttpEndpoints()
     .WithBindMount($"{Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), ".docker-data", "localstack", "volume")}", "/var/lib/localstack")
-    .WithBindMount("/var/run/docker.sock", "/var/run/docker.sock")
     .WithLifetime(ContainerLifetime.Persistent);
 
 var redisConnectionString = builder.Configuration.GetConnectionString("RedisCache");
