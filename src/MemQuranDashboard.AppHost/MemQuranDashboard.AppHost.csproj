@@ -16,5 +16,11 @@
     <ProjectReference Include="..\..\..\memquran-api\src\MemQuran.Api\MemQuran.Api.csproj" />
     <ProjectReference Include="..\..\..\memquran-dashboard-api\src\MemQuranDashboard.Api\MemQuranDashboard.Api.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="appsettings.Development.json">
+      <DependentUpon>appsettings.json</DependentUpon>
+    </None>
+  </ItemGroup>
 
 </Project>
