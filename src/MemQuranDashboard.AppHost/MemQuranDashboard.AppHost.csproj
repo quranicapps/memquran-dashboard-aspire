@@ -9,12 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.Redis" Version="13.2.2" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="13.4.3" />
+    <PackageReference Include="Aspire.Hosting.Azure.Functions" Version="13.4.3" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="13.4.3" />
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\..\..\memquran-api\src\MemQuran.Api\MemQuran.Api.csproj" />
     <ProjectReference Include="..\..\..\memquran-dashboard-api\src\MemQuranDashboard.Api\MemQuranDashboard.Api.csproj" />
+    <ProjectReference Include="..\..\..\memquran-dashboard-integrations\src\Integrations.Api\Integrations.Api.csproj" />
+    <ProjectReference Include="..\..\..\memquran-dashboard-integrations\src\Integrations.Sentry.Functions\Integrations.Sentry.Functions.csproj" />
   </ItemGroup>
   
   <ItemGroup>
